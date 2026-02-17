@@ -1,176 +1,264 @@
-
+export type Language = 'en' | 'es';
 
 export const translations = {
     en: {
+        nav: {
+            about: 'About',
+            experience: 'Experience',
+            projects: 'Projects',
+            skills: 'Skills',
+            contact: 'Contact',
+        },
         hero: {
-            availability: "Available for new projects",
-            location: "Based in Global",
-            title_start: "I build scalable",
-            title_end: "full-stack systems.",
-            subtitle: "Software Engineer specializing in robust backend architectures and sleek user interfaces. Expert in Spring Boot, React, and Cloud Infrastructure.",
-            view_systems: "View Systems",
-            contact_me: "Contact Me",
-            status: "status",
-            active: "active",
-            role: "role",
-            role_value: "Full Stack Engineer",
-            stack: "stack",
-            upt: "upt"
+            badge: 'AVAILABLE FOR WORK',
+            title: 'Full Stack Developer',
+            subtitle: 'Java (Spring Boot) & React',
+            description: "Specialized in building scalable and secure web applications. From database design and backend architecture to dynamic user interfaces and cloud deployment.",
+            viewWork: 'View Work',
+            contactMe: 'Contact Me',
+            techStack: {
+                backend: 'Java / Spring Boot',
+                frontend: 'React / TypeScript'
+            }
         },
-        systems: {
-            title: "Systems",
-            title_highlight: "I've Built",
-            description: "A selection of robust, scalable applications engineered to solve real business problems.",
-            view_case_study: "View Case Study",
-            code: "Code",
-            demo: "Demo"
-        },
-        philosophy: {
-            title: "How I Build",
+        about: {
+            title: 'Professional Profile',
+            summary1: "Full Stack Developer specialized in creating scalable and secure web applications using the Java (Spring Boot) and React ecosystem.",
+            summary2: "I have practical experience in the entire software life cycle: from relational database design and backend architectures to the implementation of dynamic user interfaces and cloud deployment.",
             principles: [
+                "Agile learning and adaptability to new technologies.",
+                "Responsibility and commitment to project goals.",
+                "Collaborative teamwork in dynamic environments.",
+                "Focus on scalable and maintainable code."
+            ]
+        },
+        experience: {
+            title: 'Professional Experience',
+            jobs: [
                 {
-                    title: "Clean Architecture",
-                    description: "I separate concerns strictly. Domain logic stays pure, independent of frameworks and UI details, ensuring long-term maintainability."
+                    date: 'Aug 2025 – Nov 2025',
+                    title: 'Full Stack Developer (SaaS Project)',
+                    company: 'TCP - TIMETRACKER',
+                    description: 'The Coastal Project – Hospitality Company in the USA.',
+                    bullets: [
+                        "Participated in the analysis, design, and implementation of a Labor Time Management System for a US hospitality company.",
+                        "Backend development with Java 17 + Spring Boot 3, applying layered architecture (Controller, Service, Repository).",
+                        "Implemented authentication and authorization using Spring Security + JWT.",
+                        "Frontend development with React + TypeScript (Vite), consuming REST APIs and handling authenticated sessions.",
+                        "Defined business rules (time validations, lockout for failed attempts, shift consistency).",
+                        "Deployed in cloud environment (DigitalOcean) and tested in production environment."
+                    ]
                 },
                 {
-                    title: "API-First Design",
-                    description: "Systems communicate through well-defined, documented contracts (OpenAPI/Swagger). This decouples frontend from backend development."
-                },
-                {
-                    title: "Scalable Data",
-                    description: "Database schemas are normalized for integrity but indexed for performance. I plan for data growth from day one."
-                },
-                {
-                    title: "Cloud Native",
-                    description: "Infrastructure as Code (IaC) and containerization means 'it works on my machine' means it works in production too."
+                    date: 'Current',
+                    title: 'Full Stack Design & Prototyping',
+                    company: 'SGAF – PARTY RENTAL MANAGEMENT SYSTEM',
+                    description: 'Project (In Development)',
+                    bullets: [
+                        "Design and prototyping of an administrative application for event furniture rental management (orders, inventory, reports, and configuration).",
+                        "Dashboard design with operational KPIs (daily orders, estimated income, pending events) and monthly charts.",
+                        "Focus on clear, intuitive User Experience (UX) oriented to reduce operational errors in small and medium businesses."
+                    ]
                 }
             ]
         },
-        contact: {
-            title: "Ready to build something scalable?",
-            description: "I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open.",
-            cta: "Say Hello",
-            footer: "Juan Castellanos. Built with React & Tailwind."
+        projects: {
+            title: 'Projects & Tools',
+            list: [
+                {
+                    title: 'TCP – TIMETRACKER',
+                    bullets: [
+                        "Labor Time Management System.",
+                        "RBAC, Spring Security + JWT.",
+                        "Cloud Deployment (DigitalOcean)."
+                    ],
+                    tags: ["Java 17", "Spring Boot 3", "React", "TypeScript", "PostgreSQL", "Docker", "DigitalOcean"],
+                    link: "#",
+                    imageUrl: "/tcp-project.png" // Placeholder
+                },
+                {
+                    title: 'SGAF – MANAGEMENT SYSTEM',
+                    bullets: [
+                        "Party Rental Management.",
+                        "Operational KPIs Dashboard.",
+                        "Inventory & Reports."
+                    ],
+                    tags: ["Prototyping", "UX/UI", "Full Stack Design"],
+                    link: "#",
+                    imageUrl: "/sgaf-project.png" // Placeholder
+                }
+            ]
         },
-        projects: [
-            {
-                title: "TCP — TimeTracker SaaS",
-                subtitle: "Enterprise-grade time tracking and payroll system",
-                problem: "Companies needed a reliable way to track employee hours across multiple timezones with complex payroll rules, while ensuring data integrity and preventing time theft.",
-                architecture: "Microservices architecture with a dedicated Auth service. Uses an event-driven approach for generating reports asynchronously to prevent blocking the main thread during peak usage.",
-                techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "AWS", "Redis"],
-                features: [
-                    "Role-based Access Control (RBAC)",
-                    "Real-time clocked-in status",
-                    "Automated payroll calculation",
-                    "Geo-fencing validation",
-                    "Exportable PDF/Excel reports"
-                ],
-                demoUrl: "#",
-                repoUrl: "#"
+        skills: {
+            title: 'Skills Summary',
+            categories: {
+                backend: 'Backend & Database',
+                frontend: 'Frontend',
+                devops: 'DevOps & Tools'
             },
-            {
-                title: "EcoLogistics Core",
-                subtitle: "Supply chain management platform for sustainable shipping",
-                problem: "Legacy logistics systems failed to account for carbon footprint data. The client needed a system to optimize routes not just for speed, but for environmental impact.",
-                architecture: "Monolithic modular architecture on Spring Boot for type-safety and performance. key-value store for caching frequent route queries.",
-                techStack: ["Spring Boot", "Java", "React", "MySQL", "Google Maps API", "Terraform"],
-                features: [
-                    "Carbon footprint calculator",
-                    "Route optimization algorithm",
-                    "Vendor management portal",
-                    "Real-time shipment tracking",
-                    "Analytics dashboard"
-                ],
-                demoUrl: "#",
-                repoUrl: "#"
+            list: [
+                "Web application development with Java (Spring Boot and React).",
+                "Knowledge of SQL (complex queries, JOIN, stored procedures, functions).",
+                "Application containerization using Docker.",
+                "Collaborative work with version control (Git, Pull Request, branch management).",
+                "Ability to interact with technical teams and adapt to agile technologies.",
+                "Design and consumption of REST APIs."
+            ],
+            tools: {
+                languages: ["Java", "JavaScript", "Python", "SQL"],
+                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React (Vite)", "Flutter"],
+                databases: ["PostgreSQL", "MySQL"],
+                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman"]
             }
-        ]
+        },
+        languages: {
+            title: 'Languages',
+            items: [
+                { name: 'English', level: 'Intermediate' },
+                { name: 'Spanish', level: 'Native' }
+            ]
+        },
+        contact: {
+            title: 'Contact',
+            cta: 'Get in Touch',
+            details: {
+                email: 'juancastellanosg84@gmail.com',
+                phone: '4137-1469',
+                location: 'Escuintla, Guatemala'
+            }
+        },
+        footer: {
+            text: '2026 • Juan Daniel Castellanos González'
+        }
     },
     es: {
+        nav: {
+            about: 'Perfil',
+            experience: 'Experiencia',
+            projects: 'Proyectos',
+            skills: 'Habilidades',
+            contact: 'Contacto',
+        },
         hero: {
-            availability: "Disponible para nuevos proyectos",
-            location: "Basado en Global",
-            title_start: "Construyo sistemas",
-            title_end: "full-stack escalables.",
-            subtitle: "Ingeniero de Software especializado en arquitecturas backend robustas e interfaces de usuario elegantes. Experto en Spring Boot, React e Infraestructura Cloud.",
-            view_systems: "Ver Sistemas",
-            contact_me: "Contáctame",
-            status: "estado",
-            active: "activo",
-            role: "rol",
-            role_value: "Ingeniero Full Stack",
-            stack: "stack",
-            upt: "upt"
+            badge: 'DISPONIBLE PARA TRABAJAR',
+            title: 'Desarrollador Full Stack',
+            subtitle: 'Java (Spring Boot) y React',
+            description: "Especializado en la creación de aplicaciones web escalables y seguras. Desde el diseño de bases de datos y arquitecturas backend, hasta interfaces dinámicas y despliegue en la nube.",
+            viewWork: 'Ver Proyectos',
+            contactMe: 'Contáctame',
+            techStack: {
+                backend: 'Java / Spring Boot',
+                frontend: 'React / TypeScript'
+            }
         },
-        systems: {
-            title: "Sistemas",
-            title_highlight: "Que he construido",
-            description: "Una selección de aplicaciones robustas y escalables diseñadas para resolver problemas de negocio reales.",
-            view_case_study: "Ver Caso de Estudio",
-            code: "Código",
-            demo: "Demo"
-        },
-        philosophy: {
-            title: "Cómo Construyo",
+        about: {
+            title: 'Perfil Profesional',
+            summary1: "Desarrollador Full Stack especializado en la creación de aplicaciones web escalables y seguras utilizando el ecosistema Java (Spring Boot) y React.",
+            summary2: "Cuento con experiencia práctica en todo el ciclo de vida del software: desde el diseño de bases de datos relacionales y arquitecturas backend, hasta la implementación de interfaces de usuario dinámicas y el despliegue en la nube.",
             principles: [
+                "Agilidad de aprendizaje y adaptación a tecnologías ágiles.",
+                "Responsabilidad y capacidad para trabajar en equipo.",
+                "Entornos colaborativos.",
+                "Destaco por mi capacidad."
+            ]
+        },
+        experience: {
+            title: 'Experiencia Profesional',
+            jobs: [
                 {
-                    title: "Arquitectura Limpia",
-                    description: "Separo las responsabilidades estrictamente. La lógica de dominio permanece pura, independiente de frameworks y detalles de UI, asegurando mantenibilidad a largo plazo."
+                    date: 'Agosto 2025 – Noviembre 2025',
+                    title: 'Desarrollador Full Stack (Proyecto SaaS Empresarial)',
+                    company: 'TCP - TIMETRACKER',
+                    description: 'The Coastal Project – Empresa de Hospitalidad en EE. UU.',
+                    bullets: [
+                        "Participación en el análisis, diseño e implementación de un Sistema de Gestión del Tiempo Laboral para la empresa del sector hospitalidad de EE.UU.",
+                        "Desarrollo de backend con Java 17 + Spring Boot 3, aplicando arquitectura en capas(Controller, Service, Repository).",
+                        "Implementación de autenticación y autorización mediante Spring Security + JWT",
+                        "Desarrollo frontend con React + TypeScript (Vite), consumo de APIs REST y manejo de sesiones autenticadas.",
+                        "Participación en la definición de reglas de negocio (validaciones de tiempo, bloqueo por intentos fallidos, coherencia de jornadas).",
+                        "Despliegue en entorno cloud (DigitalOcean) y pruebas en ambiente productivo."
+                    ]
                 },
                 {
-                    title: "Diseño API-First",
-                    description: "Los sistemas se comunican a través de contratos bien definidos y documentados (OpenAPI/Swagger). Esto desacopla el desarrollo frontend del backend."
-                },
-                {
-                    title: "Datos Escalables",
-                    description: "Los esquemas de base de datos están normalizados para integridad pero indexados para rendimiento. Planifico el crecimiento de datos desde el primer día."
-                },
-                {
-                    title: "Cloud Native",
-                    description: "Infraestructura como Código (IaC) y contenedorización significa que 'funciona en mi máquina' significa que funciona en producción también."
+                    date: 'Actualidad',
+                    title: 'Diseño y Prototipado Full Stack',
+                    company: 'SGAF – SISTEMA DE GESTIÓN PARA ALQUILERES DE FIESTAS',
+                    description: 'Proyecto (En desarrollo)',
+                    bullets: [
+                        "Diseño y prototipado de una aplicación administrativa para gestión de alquileres de mobiliario para eventos (pedidos, inventario, reportes y configuración).",
+                        "Diseño de dashboard con KPIs operativos (pedidos del día, ingresos estimados, eventos pendientes) y gráficas mensuales.",
+                        "Enfoque en experiencia de usuario (UX) clara, intuitiva y orientada a reducir errores operativos en negocios pequeños y medianos."
+                    ]
                 }
             ]
         },
-        contact: {
-            title: "¿Listo para construir algo escalable?",
-            description: "Actualmente estoy buscando nuevas oportunidades. Ya sea que tengas una pregunta o simplemente quieras saludar, mi bandeja de entrada siempre está abierta.",
-            cta: "Di Hola",
-            footer: "Juan Castellanos. Construido con React y Tailwind."
+        projects: {
+            title: 'Herramientas y Tecnologías', // Using this section for highlighted projects/tools as per request "destacando la herramientas y proyectos"
+            list: [
+                {
+                    title: 'TCP – TIMETRACKER',
+                    bullets: [
+                        "Sistema de Gestión del Tiempo Laboral.",
+                        "Seguridad con Spring Security + JWT.",
+                        "Despliegue en DigitalOcean."
+                    ],
+                    tags: ["Java 17", "Spring Boot 3", "React", "TypeScript", "PostgreSQL", "Docker", "DigitalOcean"],
+                    link: "#",
+                    imageUrl: "/tcp-project.png" // Placeholder
+                },
+                {
+                    title: 'SGAF – SISTEMA DE GESTIÓN',
+                    bullets: [
+                        "Gestión de alquileres de fiestas.",
+                        "Dashboard con KPIs operativos.",
+                        "UX clara e intuitiva."
+                    ],
+                    tags: ["Prototyping", "UX/UI", "Full Stack Design"],
+                    link: "#",
+                    imageUrl: "/sgaf-project.png" // Placeholder
+                }
+            ]
         },
-        projects: [
-            {
-                title: "TCP — TimeTracker SaaS",
-                subtitle: "Sistema de nómina y seguimiento de tiempo de grado empresarial",
-                problem: "Las empresas necesitaban una forma confiable de rastrear horas de empleados en múltiples zonas horarias con reglas de nómina complejas, asegurando integridad de datos y previniendo robo de tiempo.",
-                architecture: "Arquitectura de microservicios con un servicio de Auth dedicado. Utiliza un enfoque basado en eventos para generar reportes asincrónicamente para evitar bloquear el hilo principal durante picos de uso.",
-                techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "AWS", "Redis"],
-                features: [
-                    "Control de Acceso Basado en Roles (RBAC)",
-                    "Estado de fichaje en tiempo real",
-                    "Cálculo de nómina automatizado",
-                    "Validación por geo-cercas",
-                    "Reportes PDF/Excel exportables"
-                ],
-                demoUrl: "#",
-                repoUrl: "#"
+        skills: {
+            title: 'Resumen de Habilidades',
+            categories: {
+                backend: 'Backend y BD',
+                frontend: 'Frontend',
+                devops: 'DevOps e Infraestructura'
             },
-            {
-                title: "EcoLogistics Core",
-                subtitle: "Plataforma de gestión de cadena de suministro para envíos sostenibles",
-                problem: "Los sistemas de logística heredados no tenían en cuenta los datos de huella de carbono. El cliente necesitaba un sistema para optimizar rutas no solo por velocidad, sino por impacto ambiental.",
-                architecture: "Arquitectura modular monolítica en Spring Boot para seguridad de tipos y rendimiento. Almacén clave-valor para caché de consultas de rutas frecuentes.",
-                techStack: ["Spring Boot", "Java", "React", "MySQL", "Google Maps API", "Terraform"],
-                features: [
-                    "Calculadora de huella de carbono",
-                    "Algoritmo de optimización de rutas",
-                    "Portal de gestión de proveedores",
-                    "Seguimiento de envíos en tiempo real",
-                    "Panel de análisis"
-                ],
-                demoUrl: "#",
-                repoUrl: "#"
+            list: [
+                "Desarrollo de aplicaciones web con Java (Spring Boot y React).",
+                "Conocimientos en SQL(consultas complejas, JOIN, procedimientos almacenados, funciones).",
+                "Contenerización de aplicaciones utilizando Docker.",
+                "Trabajo colaborativo con control de versionamiento(Git, Pull Request, manejo de ramas).",
+                "Capacidad para interactuar con equipos técnicos y adaptarme a tecnologías ágiles.",
+                "Diseño y consumo de APIs REST."
+            ],
+            tools: {
+                languages: ["Java", "JavaScript", "Python", "SQL"],
+                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React (Vite)", "Flutter"],
+                databases: ["PostgreSQL", "MySQL"],
+                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman"]
             }
-        ]
+        },
+        languages: {
+            title: 'Idiomas',
+            items: [
+                { name: 'Inglés', level: 'Intermedio' },
+                { name: 'Español', level: 'Nativo' }
+            ]
+        },
+        contact: {
+            title: 'Contacto',
+            cta: 'Contactar',
+            details: {
+                email: 'juancastellanosg84@gmail.com',
+                phone: '4137-1469',
+                location: 'Escuintla, Guatemala'
+            }
+        },
+        footer: {
+            text: '2026 • Juan Daniel Castellanos González'
+        }
     }
 };

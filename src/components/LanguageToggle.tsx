@@ -1,22 +1,17 @@
-
-import { Globe } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import { Button } from './Button';
 
 export const LanguageToggle = () => {
-    const { language, toggleLanguage } = useLanguage();
+    const { language, setLanguage } = useLanguage();
 
     return (
-        <div className="fixed top-4 right-4 z-50">
-            <Button
-                variant="secondary"
-                size="sm"
-                onClick={toggleLanguage}
-                className="backdrop-blur-md bg-surface/50 border border-border/50 shadow-lg"
-                icon={<Globe size={16} />}
-            >
-                {language === 'en' ? 'ES' : 'EN'}
-            </Button>
-        </div>
+        <button
+            onClick={() => setLanguage(language === 'en' ? 'es' : 'en')}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-border/40 hover:border-accent/40 bg-surface/50 text-xs font-mono transition-all duration-300 group"
+            aria-label="Toggle Language"
+        >
+            <span className={`transition-colors duration-300 ${language === 'en' ? 'text-accent font-bold' : 'text-muted'}`}>EN</span>
+            <span className="text-border">/</span>
+            <span className={`transition-colors duration-300 ${language === 'es' ? 'text-accent font-bold' : 'text-muted'}`}>ES</span>
+        </button>
     );
 };

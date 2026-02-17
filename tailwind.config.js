@@ -8,14 +8,19 @@ export default {
         extend: {
             fontFamily: {
                 sans: ['Inter', 'sans-serif'],
+                display: ['Inter', 'sans-serif'], // Added for semantic clarity
             },
             colors: {
-                background: '#0f0f0f',
-                surface: '#1a1a1a',
-                border: '#222222',
-                primary: '#ededed',
-                secondary: '#a1a1a1',
-                accent: '#3b82f6', // Subtle blue for interactive elements
+                background: 'var(--bg)',
+                surface: 'var(--surface)',
+                border: 'var(--border)',
+                text: 'var(--text)',
+                muted: 'var(--muted)',
+                accent: 'var(--accent)',
+                'accent-soft': 'var(--accent-soft)',
+            },
+            transitionTimingFunction: {
+                'out-expo': 'cubic-bezier(0.22, 1, 0.36, 1)',
             },
         },
     },
