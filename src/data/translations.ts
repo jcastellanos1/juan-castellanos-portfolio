@@ -71,7 +71,15 @@ export const translations = {
                     ],
                     tags: ["Java 17", "Spring Boot 3", "React", "TypeScript", "PostgreSQL", "Docker", "DigitalOcean"],
                     link: "#",
-                    imageUrl: "/tcp-project.png" // Placeholder
+                    images: [
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-1.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-2.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-3.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-4.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-5.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-6.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-7.png"
+                    ]
                 },
                 {
                     title: 'SGAF – MANAGEMENT SYSTEM',
@@ -82,7 +90,13 @@ export const translations = {
                     ],
                     tags: ["Prototyping", "UX/UI", "Full Stack Design"],
                     link: "#",
-                    imageUrl: "/sgaf-project.png" // Placeholder
+                    images: [
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-1.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-2.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-3.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-4.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-5.png"
+                    ]
                 }
             ]
         },
@@ -116,8 +130,10 @@ export const translations = {
             ]
         },
         contact: {
-            title: 'Contact',
-            cta: 'Get in Touch',
+            headline: 'Interested in building something scalable?',
+            subtext: 'Open to collaborations, freelance work, and full-time opportunities.',
+            copyButton: 'Copy email',
+            copiedConfirmation: 'Email copied',
             details: {
                 email: 'juancastellanosg84@gmail.com',
                 phone: '4137-1469',
@@ -125,7 +141,7 @@ export const translations = {
             }
         },
         footer: {
-            text: '2026 • Juan Daniel Castellanos González'
+            text: '© 2026 Juan Castellanos. All rights reserved.'
         }
     },
     es: {
@@ -198,7 +214,15 @@ export const translations = {
                     ],
                     tags: ["Java 17", "Spring Boot 3", "React", "TypeScript", "PostgreSQL", "Docker", "DigitalOcean"],
                     link: "#",
-                    imageUrl: "/tcp-project.png" // Placeholder
+                    images: [
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-1.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-2.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-3.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-4.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-5.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-6.png",
+                        "/juan-castellanos-portfolio/projects/tcp/tcp-7.png"
+                    ]
                 },
                 {
                     title: 'SGAF – SISTEMA DE GESTIÓN',
@@ -209,7 +233,13 @@ export const translations = {
                     ],
                     tags: ["Prototyping", "UX/UI", "Full Stack Design"],
                     link: "#",
-                    imageUrl: "/sgaf-project.png" // Placeholder
+                    images: [
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-1.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-2.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-3.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-4.png",
+                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-5.png"
+                    ]
                 }
             ]
         },
@@ -243,8 +273,10 @@ export const translations = {
             ]
         },
         contact: {
-            title: 'Contacto',
-            cta: 'Contactar',
+            headline: '¿Interesado en construir algo escalable?',
+            subtext: 'Abierto a colaboraciones, trabajo freelance y oportunidades de tiempo completo.',
+            copyButton: 'Copiar email',
+            copiedConfirmation: 'Email copiado',
             details: {
                 email: 'juancastellanosg84@gmail.com',
                 phone: '4137-1469',
@@ -252,7 +284,7 @@ export const translations = {
             }
         },
         footer: {
-            text: '2026 • Juan Daniel Castellanos González'
+            text: '© 2026 Juan Castellanos. Todos los derechos reservados.'
         }
     }
 };

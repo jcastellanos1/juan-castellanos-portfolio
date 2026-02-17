@@ -13,35 +13,35 @@ export const Hero = () => {
                     <span className="inline-block px-3 py-1 text-xs font-medium tracking-wider text-accent border border-accent/20 rounded-full mb-6">
                         {t.hero.badge}
                     </span>
-                    <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
+                    <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
                         {t.hero.title}
                     </h1>
-                    <p className="text-xl text-muted/80 max-w-xl leading-relaxed mb-6">
+                    <p className="text-lg sm:text-xl text-muted/80 max-w-xl leading-relaxed mb-6">
                         {t.hero.subtitle}
                     </p>
-                    <p className="text-lg text-muted/60 max-w-xl leading-relaxed">
+                    <p className="text-base sm:text-lg text-muted/60 max-w-xl leading-relaxed">
                         {t.hero.description}
                     </p>
                 </div>
 
-                <div className="flex flex-wrap gap-4 mb-20">
+                <div className="flex flex-col sm:flex-row gap-4 mb-12 sm:mb-20">
                     <a
                         href="#projects"
-                        className="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-accent hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+                        className="px-8 py-3 bg-white text-black font-medium rounded-full hover:bg-accent hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-center"
                     >
                         {t.hero.viewWork}
                     </a>
                     <a
                         href="#contact"
-                        className="px-8 py-3 border border-border/60 text-white font-medium rounded-full hover:border-accent hover:text-accent transition-all duration-300"
+                        className="px-8 py-3 border border-border/60 text-white font-medium rounded-full hover:border-accent hover:text-accent transition-all duration-300 text-center"
                     >
                         {t.hero.contactMe}
                     </a>
                 </div>
 
-                <div className="flex gap-4 text-xs md:text-sm text-muted font-mono tracking-widest uppercase">
+                <div className="flex flex-wrap gap-2 md:gap-4 text-xs md:text-sm text-muted font-mono tracking-widest uppercase">
                     {t.hero.stackLine.split(' • ').map((tech, index, array) => (
-                        <span key={index}>
+                        <span key={index} className="whitespace-nowrap">
                             {tech}
                             {index < array.length - 1 && (
                                 <span className="text-accent mx-2">•</span>

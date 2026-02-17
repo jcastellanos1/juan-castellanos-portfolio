@@ -5,6 +5,7 @@ import { Section } from './components/Section';
 import { ExperienceItem } from './components/ExperienceItem';
 import { ProjectCard } from './components/ProjectCard'; // To be updated
 import { SkillGroup } from './components/SkillGroup'; // To be updated
+import { Contact } from './components/Contact';
 import { useLanguage } from './context/LanguageContext';
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
                             bullets={project.bullets}
                             tags={project.tags}
                             link={project.link}
-                            imageUrl={project.imageUrl}
+                            images={project.images}
                         />
                     ))}
                 </div>
@@ -100,18 +101,9 @@ function App() {
                 </div>
             </Section>
 
+
             {/* Contact Section */}
-            <Section id="contact" className="mb-20">
-                <div className="text-center py-20 border-t border-border/40">
-                    <h2 className="text-3xl font-bold text-text mb-8">{t.contact.title}</h2>
-                    <a
-                        href="mailto:jcastellanos@example.com"
-                        className="inline-block px-8 py-3 bg-text text-black font-medium rounded-full hover:bg-accent hover:text-white transition-all duration-300 hover:scale-105"
-                    >
-                        {t.contact.cta}
-                    </a>
-                </div>
-            </Section>
+            <Contact />
 
             <footer className="text-center text-xs text-muted/30 pb-8 font-mono">
                 <p>{t.footer.text}</p>

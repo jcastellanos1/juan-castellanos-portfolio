@@ -37,6 +37,7 @@
     font-family: 'Inter', sans-serif;
     letter-spacing: -0.015em;
     /* Tighter letter spacing for editorial feel */
+    overflow-x: hidden;
   }
 
   body {
