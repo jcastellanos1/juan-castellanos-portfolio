@@ -14,10 +14,12 @@ export const Hero = () => {
                         {t.hero.badge}
                     </span>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
-                        {t.hero.title}<br />
-                        <span className="text-muted">{t.hero.subtitle}</span>
+                        {t.hero.title}
                     </h1>
-                    <p className="text-xl text-muted/80 max-w-xl leading-relaxed">
+                    <p className="text-xl text-muted/80 max-w-xl leading-relaxed mb-6">
+                        {t.hero.subtitle}
+                    </p>
+                    <p className="text-lg text-muted/60 max-w-xl leading-relaxed">
                         {t.hero.description}
                     </p>
                 </div>
@@ -37,15 +39,15 @@ export const Hero = () => {
                     </a>
                 </div>
 
-                <div className="flex gap-12 text-sm text-muted/60 font-mono">
-                    <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                        {t.hero.techStack.backend}
-                    </div>
-                    <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
-                        {t.hero.techStack.frontend}
-                    </div>
+                <div className="flex gap-4 text-xs md:text-sm text-muted font-mono tracking-widest uppercase">
+                    {t.hero.stackLine.split(' • ').map((tech, index, array) => (
+                        <span key={index}>
+                            {tech}
+                            {index < array.length - 1 && (
+                                <span className="text-accent mx-2">•</span>
+                            )}
+                        </span>
+                    ))}
                 </div>
             </div>
         </Section>

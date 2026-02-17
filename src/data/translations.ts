@@ -12,14 +12,11 @@ export const translations = {
         hero: {
             badge: 'AVAILABLE FOR WORK',
             title: 'Full Stack Developer',
-            subtitle: 'Java (Spring Boot) & React',
+            subtitle: 'Secure APIs. Structured data. Thoughtful interfaces.',
             description: "Specialized in building scalable and secure web applications. From database design and backend architecture to dynamic user interfaces and cloud deployment.",
             viewWork: 'View Work',
             contactMe: 'Contact Me',
-            techStack: {
-                backend: 'Java / Spring Boot',
-                frontend: 'React / TypeScript'
-            }
+            stackLine: 'SPRING BOOT • REACT • POSTGRESQL • DOCKER • CLOUD'
         },
         about: {
             title: 'Professional Profile',
@@ -142,14 +139,11 @@ export const translations = {
         hero: {
             badge: 'DISPONIBLE PARA TRABAJAR',
             title: 'Desarrollador Full Stack',
-            subtitle: 'Java (Spring Boot) y React',
+            subtitle: 'APIs seguras. Datos estructurados. Interfaces pensadas.',
             description: "Especializado en la creación de aplicaciones web escalables y seguras. Desde el diseño de bases de datos y arquitecturas backend, hasta interfaces dinámicas y despliegue en la nube.",
             viewWork: 'Ver Proyectos',
             contactMe: 'Contáctame',
-            techStack: {
-                backend: 'Java / Spring Boot',
-                frontend: 'React / TypeScript'
-            }
+            stackLine: 'SPRING BOOT • REACT • POSTGRESQL • DOCKER • CLOUD'
         },
         about: {
             title: 'Perfil Profesional',
