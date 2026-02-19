@@ -10,7 +10,7 @@ interface ProjectCardProps {
     images?: string[];
 }
 
-export const ProjectCard = ({ title, bullets, tags, link, images }: ProjectCardProps) => {
+export const ProjectCard = ({ title, bullets, tags, images }: ProjectCardProps) => {
     const { ref, className } = useReveal<HTMLDivElement>(0.1);
     const [isCarouselOpen, setIsCarouselOpen] = useState(false);
 
@@ -52,19 +52,11 @@ export const ProjectCard = ({ title, bullets, tags, link, images }: ProjectCardP
                 {/* Content Section */}
                 <div className="md:col-span-8 flex flex-col justify-center">
                     <div className="mb-4">
-                        <a
-                            href={link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group-hover:translate-x-2 transition-transform duration-300 inline-block"
-                        >
+                        <div className="group-hover:translate-x-2 transition-transform duration-300 inline-block">
                             <h3 className="text-2xl font-bold text-text group-hover:text-accent transition-colors flex items-center gap-3">
                                 {title}
-                                <svg className="w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                                </svg>
                             </h3>
-                        </a>
+                        </div>
                     </div>
 
                     <ul className="space-y-3 mb-6">
