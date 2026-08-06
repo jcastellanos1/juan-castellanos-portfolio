@@ -20,8 +20,8 @@ export const translations = {
         },
         about: {
             title: 'Professional Profile',
-            summary1: "Full Stack Developer specialized in creating scalable and secure web applications using the Java (Spring Boot) and React ecosystem.",
-            summary2: "I have practical experience in the entire software life cycle: from relational database design and backend architectures to the implementation of dynamic user interfaces and cloud deployment.",
+            summary1: "Full Stack Developer experienced in building enterprise web applications with Java, Spring Boot, and React.",
+            summary2: "I have participated in the complete software development lifecycle, from backend architecture and relational database design to user interface implementation and cloud deployment. I am currently in the tenth semester of Systems Engineering at Universidad Mariano Gálvez de Guatemala.",
             principles: [
                 "Agile learning and adaptability to new technologies.",
                 "Responsibility and commitment to project goals.",
@@ -32,6 +32,20 @@ export const translations = {
         experience: {
             title: 'Professional Experience',
             jobs: [
+                {
+                    date: 'May 2025 – Present',
+                    title: 'Application Programmer',
+                    company: 'TSI Tecnología e Informática',
+                    description: 'Santa Lucía Cotzumalguapa, Escuintla, Guatemala.',
+                    bullets: [
+                        "Develop and maintain the company's applications.",
+                        "Implement enhancements and new features based on business needs.",
+                        "Resolve incidents and maintain systems currently in operation.",
+                        "Support requirements analysis for new developments and improvement requests.",
+                        "Test applications before release to validate their correct operation.",
+                        "Contribute to technical documentation when required."
+                    ]
+                },
                 {
                     date: 'Aug 2025 – Nov 2025',
                     title: 'Full Stack Developer (SaaS Project)',
@@ -44,17 +58,6 @@ export const translations = {
                         "Frontend development with React + TypeScript (Vite), consuming REST APIs and handling authenticated sessions.",
                         "Defined business rules (time validations, lockout for failed attempts, shift consistency).",
                         "Deployed in cloud environment (DigitalOcean) and tested in production environment."
-                    ]
-                },
-                {
-                    date: 'Current',
-                    title: 'Full Stack Design & Prototyping',
-                    company: 'SGAF – PARTY RENTAL MANAGEMENT SYSTEM',
-                    description: 'Project (In Development)',
-                    bullets: [
-                        "Design and prototyping of an administrative application for event furniture rental management (orders, inventory, reports, and configuration).",
-                        "Dashboard design with operational KPIs (daily orders, estimated income, pending events) and monthly charts.",
-                        "Focus on clear, intuitive User Experience (UX) oriented to reduce operational errors in small and medium businesses."
                     ]
                 }
             ]
@@ -80,23 +83,6 @@ export const translations = {
                         "/juan-castellanos-portfolio/projects/tcp/tcp-6.png",
                         "/juan-castellanos-portfolio/projects/tcp/tcp-7.png"
                     ]
-                },
-                {
-                    title: 'SGAF – MANAGEMENT SYSTEM',
-                    bullets: [
-                        "Party Rental Management.",
-                        "Operational KPIs Dashboard.",
-                        "Inventory & Reports."
-                    ],
-                    tags: ["Prototyping", "UX/UI", "Full Stack Design"],
-                    link: "#",
-                    images: [
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-1.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-2.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-3.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-4.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-5.png"
-                    ]
                 }
             ]
         },
@@ -116,10 +102,10 @@ export const translations = {
                 "Design and consumption of REST APIs."
             ],
             tools: {
-                languages: ["Java", "JavaScript", "Python", "SQL"],
-                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React (Vite)", "Flutter"],
+                languages: ["Java", "JavaScript", "TypeScript", "Python", "SQL"],
+                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React", "Vite", "HTML5", "CSS3", "Bootstrap"],
                 databases: ["PostgreSQL", "MySQL"],
-                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman"]
+                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman", "IntelliJ IDEA", "Visual Studio Code", "NetBeans", "Figma"]
             }
         },
         languages: {
@@ -163,8 +149,8 @@ export const translations = {
         },
         about: {
             title: 'Perfil Profesional',
-            summary1: "Desarrollador Full Stack especializado en la creación de aplicaciones web escalables y seguras utilizando el ecosistema Java (Spring Boot) y React.",
-            summary2: "Cuento con experiencia práctica en todo el ciclo de vida del software: desde el diseño de bases de datos relacionales y arquitecturas backend, hasta la implementación de interfaces de usuario dinámicas y el despliegue en la nube.",
+            summary1: "Desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web empresariales utilizando Java, Spring Boot y React.",
+            summary2: "He participado en el ciclo completo de desarrollo de software, desde el diseño de arquitecturas backend y bases de datos relacionales hasta la implementación de interfaces de usuario y el despliegue en entornos cloud. Actualmente curso el décimo semestre de Ingeniería en Sistemas en la Universidad Mariano Gálvez de Guatemala.",
             principles: [
                 "Agilidad de aprendizaje y adaptación a tecnologías ágiles.",
                 "Responsabilidad y capacidad para trabajar en equipo.",
@@ -175,6 +161,20 @@ export const translations = {
         experience: {
             title: 'Experiencia Profesional',
             jobs: [
+                {
+                    date: 'Mayo 2025 – Actualidad',
+                    title: 'Programador de Aplicaciones',
+                    company: 'TSI Tecnología e Informática',
+                    description: 'Santa Lucía Cotzumalguapa, Escuintla, Guatemala.',
+                    bullets: [
+                        "Desarrollo y mantenimiento de aplicaciones de la empresa.",
+                        "Implementación de mejoras y nuevas funcionalidades según las necesidades del negocio.",
+                        "Corrección de incidencias y mantenimiento de los sistemas en funcionamiento.",
+                        "Apoyo en el análisis de requerimientos para nuevos desarrollos y solicitudes de mejora.",
+                        "Realización de pruebas para validar el correcto funcionamiento de las aplicaciones antes de su liberación.",
+                        "Apoyo en la elaboración de documentación técnica cuando fue requerido."
+                    ]
+                },
                 {
                     date: 'Agosto 2025 – Noviembre 2025',
                     title: 'Desarrollador Full Stack (Proyecto SaaS Empresarial)',
@@ -187,17 +187,6 @@ export const translations = {
                         "Desarrollo frontend con React + TypeScript (Vite), consumo de APIs REST y manejo de sesiones autenticadas.",
                         "Participación en la definición de reglas de negocio (validaciones de tiempo, bloqueo por intentos fallidos, coherencia de jornadas).",
                         "Despliegue en entorno cloud (DigitalOcean) y pruebas en ambiente productivo."
-                    ]
-                },
-                {
-                    date: 'Actualidad',
-                    title: 'Diseño y Prototipado Full Stack',
-                    company: 'SGAF – SISTEMA DE GESTIÓN PARA ALQUILERES DE FIESTAS',
-                    description: 'Proyecto (En desarrollo)',
-                    bullets: [
-                        "Diseño y prototipado de una aplicación administrativa para gestión de alquileres de mobiliario para eventos (pedidos, inventario, reportes y configuración).",
-                        "Diseño de dashboard con KPIs operativos (pedidos del día, ingresos estimados, eventos pendientes) y gráficas mensuales.",
-                        "Enfoque en experiencia de usuario (UX) clara, intuitiva y orientada a reducir errores operativos en negocios pequeños y medianos."
                     ]
                 }
             ]
@@ -223,23 +212,6 @@ export const translations = {
                         "/juan-castellanos-portfolio/projects/tcp/tcp-6.png",
                         "/juan-castellanos-portfolio/projects/tcp/tcp-7.png"
                     ]
-                },
-                {
-                    title: 'SGAF – SISTEMA DE GESTIÓN',
-                    bullets: [
-                        "Gestión de alquileres de fiestas.",
-                        "Dashboard con KPIs operativos.",
-                        "UX clara e intuitiva."
-                    ],
-                    tags: ["Prototyping", "UX/UI", "Full Stack Design"],
-                    link: "#",
-                    images: [
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-1.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-2.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-3.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-4.png",
-                        "/juan-castellanos-portfolio/projects/sgaf/sgaf-5.png"
-                    ]
                 }
             ]
         },
@@ -259,10 +231,10 @@ export const translations = {
                 "Diseño y consumo de APIs REST."
             ],
             tools: {
-                languages: ["Java", "JavaScript", "Python", "SQL"],
-                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React (Vite)", "Flutter"],
+                languages: ["Java", "JavaScript", "TypeScript", "Python", "SQL"],
+                frameworks: ["Spring Boot 3", "Spring Security", "Hibernate / JPA", "React", "Vite", "HTML5", "CSS3", "Bootstrap"],
                 databases: ["PostgreSQL", "MySQL"],
-                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman"]
+                devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman", "IntelliJ IDEA", "Visual Studio Code", "NetBeans", "Figma"]
             }
         },
         languages: {
