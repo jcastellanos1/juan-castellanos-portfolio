@@ -3,8 +3,8 @@ import { Hero } from './components/Hero';
 import { About } from './components/About';
 import { Section } from './components/Section';
 import { ExperienceItem } from './components/ExperienceItem';
-import { ProjectCard } from './components/ProjectCard'; // To be updated
-import { SkillGroup } from './components/SkillGroup'; // To be updated
+import { ProjectCard } from './components/ProjectCard';
+import { SkillGroup } from './components/SkillGroup';
 import { Contact } from './components/Contact';
 import { useLanguage } from './context/LanguageContext';
 
@@ -86,21 +86,6 @@ function App() {
                     />
                 </div>
             </Section>
-
-
-            {/* Languages Section */}
-            <Section id="languages" className="mb-40 lg:mb-56">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12">{t.languages.title}</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl">
-                    {t.languages.items.map((lang, index) => (
-                        <div key={index} className="flex justify-between items-center p-4 border border-border/40 rounded-lg bg-muted/5">
-                            <span className="font-medium text-text">{lang.name}</span>
-                            <span className="text-accent text-sm font-mono">{lang.level}</span>
-                        </div>
-                    ))}
-                </div>
-            </Section>
-
 
             {/* Contact Section */}
             <Contact />

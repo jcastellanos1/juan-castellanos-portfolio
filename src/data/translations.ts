@@ -108,18 +108,23 @@ export const translations = {
                 devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman", "IntelliJ IDEA", "Visual Studio Code", "NetBeans", "Figma"]
             }
         },
-        languages: {
-            title: 'Languages',
-            items: [
-                { name: 'English', level: 'Intermediate' },
-                { name: 'Spanish', level: 'Native' }
-            ]
-        },
         contact: {
             headline: 'Interested in building something scalable?',
             subtext: 'Open to collaborations, freelance work, and full-time opportunities.',
-            copyButton: 'Copy email',
-            copiedConfirmation: 'Email copied',
+            form: {
+                name: 'Name',
+                email: 'Email address',
+                subject: 'Subject',
+                message: 'Message',
+                submit: 'Send message',
+                sending: 'Sending...',
+                success: 'Your message was sent successfully. Thank you!',
+                sendError: 'We could not send your message. Please try again or contact me by email.',
+                requiredError: 'Please complete all required fields.',
+                emailError: 'Please enter a valid email address.',
+                configError: 'The contact form is not configured yet. Please use the email below.',
+                alternative: 'Or email me at'
+            },
             details: {
                 email: 'juancastellanosg84@gmail.com',
                 phone: '4137-1469',
@@ -237,18 +242,23 @@ export const translations = {
                 devops: ["Docker", "DigitalOcean", "Git", "GitHub", "Maven", "Postman", "IntelliJ IDEA", "Visual Studio Code", "NetBeans", "Figma"]
             }
         },
-        languages: {
-            title: 'Idiomas',
-            items: [
-                { name: 'Inglés', level: 'Intermedio' },
-                { name: 'Español', level: 'Nativo' }
-            ]
-        },
         contact: {
             headline: '¿Interesado en construir algo escalable?',
             subtext: 'Abierto a colaboraciones, trabajo freelance y oportunidades de tiempo completo.',
-            copyButton: 'Copiar email',
-            copiedConfirmation: 'Email copiado',
+            form: {
+                name: 'Nombre',
+                email: 'Correo electrónico',
+                subject: 'Asunto',
+                message: 'Mensaje',
+                submit: 'Enviar mensaje',
+                sending: 'Enviando...',
+                success: 'Tu mensaje fue enviado correctamente. ¡Gracias!',
+                sendError: 'No pudimos enviar tu mensaje. Intenta de nuevo o contáctame por correo.',
+                requiredError: 'Completa todos los campos requeridos.',
+                emailError: 'Ingresa un correo electrónico válido.',
+                configError: 'El formulario aún no está configurado. Usa el correo que aparece abajo.',
+                alternative: 'O escríbeme a'
+            },
             details: {
                 email: 'juancastellanosg84@gmail.com',
                 phone: '4137-1469',
